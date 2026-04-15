@@ -1,4 +1,4 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -6,7 +6,6 @@
   <title>SnapSlot™</title>
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
-    
     body {
       background-color: #1A1A2E;
       color: #F5F0E8;
@@ -18,7 +17,6 @@
       justify-content: center;
       padding: 40px 24px;
     }
-
     .logo {
       font-size: 32px;
       font-weight: 800;
@@ -26,11 +24,6 @@
       letter-spacing: -0.5px;
       margin-bottom: 8px;
     }
-
-    .bolt {
-      margin-right: 8px;
-    }
-
     .tagline {
       font-size: 14px;
       color: #9E9E9E;
@@ -38,7 +31,6 @@
       text-transform: uppercase;
       margin-bottom: 64px;
     }
-
     h1 {
       font-size: 48px;
       font-weight: 800;
@@ -48,7 +40,6 @@
       margin-bottom: 16px;
       max-width: 600px;
     }
-
     .subtitle {
       font-size: 18px;
       color: #9E9E9E;
@@ -57,7 +48,6 @@
       line-height: 1.6;
       margin-bottom: 48px;
     }
-
     .waitlist {
       display: flex;
       flex-direction: column;
@@ -66,7 +56,6 @@
       max-width: 400px;
       margin-bottom: 80px;
     }
-
     .waitlist input {
       background: #16213E;
       border: 1px solid #2A2A4A;
@@ -77,15 +66,8 @@
       outline: none;
       width: 100%;
     }
-
-    .waitlist input::placeholder {
-      color: #555;
-    }
-
-    .waitlist input:focus {
-      border-color: #D4AF37;
-    }
-
+    .waitlist input::placeholder { color: #555; }
+    .waitlist input:focus { border-color: #D4AF37; }
     .waitlist button {
       background: #D4AF37;
       color: #1A1A2E;
@@ -98,68 +80,38 @@
       width: 100%;
       transition: opacity 0.2s;
     }
-
-    .waitlist button:hover {
-      opacity: 0.9;
-    }
-
+    .waitlist button:hover { opacity: 0.9; }
     .success {
       display: none;
       color: #4CAF7D;
       font-size: 15px;
       text-align: center;
-      margin-top: -4px;
     }
-
     footer {
       color: #555;
       font-size: 13px;
       text-align: center;
       line-height: 2;
     }
-
-    footer a {
-      color: #9E9E9E;
-      text-decoration: none;
-    }
-
-    footer a:hover {
-      color: #D4AF37;
-    }
-
-    .divider {
-      margin: 0 8px;
-      color: #333;
-    }
+    footer a { color: #9E9E9E; text-decoration: none; }
+    footer a:hover { color: #D4AF37; }
   </style>
 </head>
 <body>
-
-  <div class="logo">
-    <span class="bolt">⚡</span>SnapSlot™
-  </div>
+  <div class="logo">⚡ SnapSlot™</div>
   <div class="tagline">Coming Soon</div>
-
   <h1>Something big is coming.</h1>
-
-  <p class="subtitle">
-    Be the first to know when SnapSlot launches in your area.
-  </p>
-
+  <p class="subtitle">Be the first to know when SnapSlot launches in your area.</p>
   <div class="waitlist">
     <input type="email" id="email" placeholder="your@email.com" />
     <button onclick="joinWaitlist()">Join the Waitlist</button>
     <p class="success" id="success">You're on the list. We'll be in touch. 👍</p>
   </div>
-
   <footer>
-    <a href="mailto:support@snapslot.com.au">support@snapslot.com.au</a>
-    <br />
-    SnapSlot™ is operated by TecAtlas (ABN 96 955 951 165)
-    <br />
+    <a href="mailto:support@snapslot.com.au">support@snapslot.com.au</a><br />
+    SnapSlot™ is operated by TecAtlas (ABN 96 955 951 165)<br />
     Geelong, Victoria, Australia
   </footer>
-
   <script>
     function joinWaitlist() {
       const email = document.getElementById('email').value;
@@ -171,6 +123,5 @@
       document.getElementById('email').value = '';
     }
   </script>
-
 </body>
 </html>
