@@ -7,7 +7,7 @@
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
-      background-color: #1A1A2E;
+      background-color: #17182A;
       color: #F5F0E8;
       font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
       min-height: 100vh;
@@ -48,49 +48,12 @@
       font-size: 18px;
       color: #9E9E9E;
       text-align: center;
-      max-width: 480px;
+      max-width: 520px;
       line-height: 1.6;
-      margin-bottom: 48px;
-    }
-    .waitlist {
-      display: flex;
-      flex-direction: column;
-      gap: 12px;
-      width: 100%;
-      max-width: 400px;
       margin-bottom: 80px;
     }
-    .waitlist input {
-      background: #16213E;
-      border: 1px solid #2A2A4A;
-      border-radius: 12px;
-      padding: 16px 20px;
-      font-size: 16px;
-      color: #F5F0E8;
-      outline: none;
-      width: 100%;
-    }
-    .waitlist input::placeholder { color: #555; }
-    .waitlist input:focus { border-color: #D4AF37; }
-    .waitlist button {
-      background: #D4AF37;
-      color: #1A1A2E;
-      border: none;
-      border-radius: 12px;
-      padding: 16px 20px;
-      font-size: 16px;
-      font-weight: 700;
-      cursor: pointer;
-      width: 100%;
-      transition: opacity 0.2s;
-    }
-    .waitlist button:hover { opacity: 0.9; }
-    .success {
-      display: none;
-      color: #4CAF7D;
-      font-size: 15px;
-      text-align: center;
-    }
+    .subtitle a { color: #D4AF37; text-decoration: none; }
+    .subtitle a:hover { text-decoration: underline; }
     footer {
       color: #555;
       font-size: 13px;
@@ -106,29 +69,13 @@
     <span>⚡</span>
     <span>SnapSlot<span style="font-size: 0.45em; vertical-align: super;">™</span></span>
   </div>
-  <div class="tagline">Coming Soon</div>
-  <h1>Something big is coming.</h1>
-  <p class="subtitle">Be the first to know when SnapSlot launches in your area.</p>
-  <div class="waitlist">
-    <input type="email" id="email" placeholder="your@email.com" />
-    <button onclick="joinWaitlist()">Join the Waitlist</button>
-    <p class="success" id="success">You're on the list. We'll be in touch. 👍</p>
-  </div>
+  <div class="tagline">Private Beta</div>
+  <h1>SnapSlot is in private beta.</h1>
+  <p class="subtitle">We're not accepting public signups yet. If you're a beta tester and landed here from a password reset link, your app needs an update — please check TestFlight (iOS) or Google Play internal testing (Android) for the latest build, or email <a href="mailto:support@snapslot.com.au">support@snapslot.com.au</a>.</p>
   <footer>
     <a href="mailto:support@snapslot.com.au">support@snapslot.com.au</a><br />
-    SnapSlot™ is operated by TecAtlas (ABN 96 955 951 165)<br />
+    SnapSlot™ is operated by TecAtlas Pty Ltd (ABN 35 697 657 097)<br />
     Geelong, Victoria, Australia
   </footer>
-  <script>
-    function joinWaitlist() {
-      const email = document.getElementById('email').value;
-      if (!email || !email.includes('@')) {
-        alert('Please enter a valid email address.');
-        return;
-      }
-      document.getElementById('success').style.display = 'block';
-      document.getElementById('email').value = '';
-    }
-  </script>
 </body>
 </html>
