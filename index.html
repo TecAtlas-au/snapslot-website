@@ -1,81 +1,207 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-AU">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>SnapSlot™</title>
-  <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body {
-      background-color: #17182A;
-      color: #F5F0E8;
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      padding: 40px 24px;
-      text-align: center;
-    }
-    .logo {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 48px;
-      font-weight: 800;
-      color: #D4AF37;
-      margin-bottom: 8px;
-    }
-    .tagline {
-      font-size: 14px;
-      color: #9E9E9E;
-      letter-spacing: 2px;
-      text-transform: uppercase;
-      margin-bottom: 64px;
-    }
-    h1 {
-      font-family: inherit;
-      font-size: 48px;
-      font-weight: 800;
-      color: #F5F0E8;
-      text-align: center;
-      line-height: 1.1;
-      margin-bottom: 16px;
-      max-width: 600px;
-    }
-    .subtitle {
-      font-size: 18px;
-      color: #9E9E9E;
-      text-align: center;
-      max-width: 520px;
-      line-height: 1.6;
-      margin-bottom: 80px;
-    }
-    .subtitle a { color: #D4AF37; text-decoration: none; }
-    .subtitle a:hover { text-decoration: underline; }
-    footer {
-      color: #555;
-      font-size: 13px;
-      text-align: center;
-      line-height: 2;
-    }
-    footer a { color: #9E9E9E; text-decoration: none; }
-    footer a:hover { color: #D4AF37; }
-  </style>
+  <title>SnapSlot™ — Last-minute discounted appointment slots near you</title>
+  <meta name="description" content="SnapSlot is the app for last-minute, discounted appointment slots near you. Treat yourself to a chair, table or session that just opened up — at a lower price." />
+  <link rel="canonical" href="https://snapslot.com.au/" />
+
+  <!-- Open Graph / Twitter -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="SnapSlot" />
+  <meta property="og:title" content="SnapSlot™ — Last-minute discounted appointment slots" />
+  <meta property="og:description" content="Treat yourself to last-minute, discounted appointment slots near you." />
+  <meta property="og:url" content="https://snapslot.com.au/" />
+  <meta property="og:image" content="https://snapslot.com.au/assets/logo-icon.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="SnapSlot™ — Last-minute discounted appointment slots" />
+  <meta name="twitter:description" content="Treat yourself to last-minute, discounted appointment slots near you." />
+  <meta name="twitter:image" content="https://snapslot.com.au/assets/logo-icon.png" />
+
+  <link rel="icon" type="image/png" href="/assets/logo-icon.png" />
+  <link rel="apple-touch-icon" href="/assets/logo-icon.png" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/styles.css" />
 </head>
 <body>
-  <div class="logo">
-    <span>⚡</span>
-    <span>SnapSlot<span style="font-size: 0.45em; vertical-align: super;">™</span></span>
-  </div>
-  <div class="tagline">Private Beta</div>
-  <h1>SnapSlot is in private beta.</h1>
-  <p class="subtitle">We're not accepting public signups yet. If you're a beta tester and landed here from a password reset link, your app needs an update — please check TestFlight (iOS) or Google Play internal testing (Android) for the latest build, or email <a href="mailto:support@snapslot.com.au">support@snapslot.com.au</a>.</p>
-  <footer>
-    <a href="mailto:support@snapslot.com.au">support@snapslot.com.au</a><br />
-    SnapSlot™ is operated by TecAtlas Pty Ltd (ABN 35 697 657 097)<br />
-    Geelong, Victoria, Australia
+
+  <!-- ===== Header ===== -->
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="/">
+        <img src="/assets/logo-icon.png" alt="SnapSlot logo" />
+        <span>SnapSlot<sup>™</sup></span>
+      </a>
+      <details class="nav-menu">
+        <summary class="nav-toggle" aria-label="Open menu">☰</summary>
+        <nav class="nav-links">
+          <a href="/">Home</a>
+          <a href="/how-it-works">How It Works</a>
+          <a href="/for-businesses">For Businesses</a>
+          <a class="btn btn-gold" href="mailto:support@snapslot.com.au?subject=Join%20the%20SnapSlot%20beta">Get the app</a>
+        </nav>
+      </details>
+    </div>
+  </header>
+
+  <main>
+    <!-- ===== Hero ===== -->
+    <section class="hero">
+      <div class="container">
+        <p class="eyebrow">Last-minute, lower prices</p>
+        <h1>Treat yourself to the slot that just opened up.</h1>
+        <p class="lead">SnapSlot shows you last-minute discounted appointments near you — from the salon chair to the massage table to the PT session. When a local business has a gap, you get the deal.</p>
+        <div class="btn-row">
+          <a class="btn btn-gold" href="mailto:support@snapslot.com.au?subject=Join%20the%20SnapSlot%20beta">Get the app</a>
+          <a class="btn btn-ghost" href="/how-it-works">See how it works</a>
+        </div>
+        <p class="note">Currently in private beta.</p>
+      </div>
+    </section>
+
+    <!-- ===== Categories ===== -->
+    <section class="section-tight center">
+      <div class="container">
+        <p class="eyebrow">All kinds of treats</p>
+        <h2>Whatever you're into.</h2>
+        <p class="lead">Book last-minute openings across the services you already love.</p>
+        <div class="chips" style="margin-top: 36px;">
+          <span class="chip">Hair Salon</span>
+          <span class="chip">Barber</span>
+          <span class="chip">Beauty Therapist</span>
+          <span class="chip">Nail Technician</span>
+          <span class="chip">Lash &amp; Brow</span>
+          <span class="chip">Massage Therapy</span>
+          <span class="chip">Yoga &amp; Pilates</span>
+          <span class="chip">Fitness &amp; PT</span>
+          <span class="chip">Tattoo Studio</span>
+          <span class="chip">Pet Grooming</span>
+          <span class="chip">Dog Walking</span>
+          <span class="chip">Tutoring</span>
+          <span class="chip">Auto Detailing</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== How it works (condensed) ===== -->
+    <section class="section band center">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">How it works</p>
+          <h2>Three taps to treat yourself.</h2>
+        </div>
+        <div class="steps">
+          <div class="step">
+            <span class="step-num">1</span>
+            <h3>Browse</h3>
+            <p>See last-minute openings near you, each at a discounted SnapSlot price.</p>
+          </div>
+          <div class="step">
+            <span class="step-num">2</span>
+            <h3>Book</h3>
+            <p>Grab the slot and pay securely in the app — no phone calls, no back-and-forth.</p>
+          </div>
+          <div class="step">
+            <span class="step-num">3</span>
+            <h3>Show up</h3>
+            <p>Turn up at the appointment time and enjoy. That's it.</p>
+          </div>
+        </div>
+        <div class="btn-row">
+          <a class="btn btn-ghost" href="/how-it-works">More on how it works</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Value props ===== -->
+    <section class="section center">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Why SnapSlot</p>
+          <h2>Real deals on real appointments.</h2>
+        </div>
+        <div class="grid">
+          <div class="card">
+            <span class="card-icon">🏷️</span>
+            <h3>Genuine discounts</h3>
+            <p>These aren't intro offers or gimmicks — they're real openings local businesses want filled, priced to move.</p>
+          </div>
+          <div class="card">
+            <span class="card-icon">⚡</span>
+            <h3>Last-minute = treat yourself</h3>
+            <p>Spontaneous fits your day. Find something today or this week and book it in seconds.</p>
+          </div>
+          <div class="card">
+            <span class="card-icon">📍</span>
+            <h3>Local to you</h3>
+            <p>Discover small businesses nearby and become a regular at places you'll actually go back to.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== For Businesses teaser ===== -->
+    <section class="section band band-cta">
+      <div class="container">
+        <p class="eyebrow">For Businesses</p>
+        <h2>Run a business? Fill your dead time.</h2>
+        <p class="lead" style="margin: 16px auto 0;">Late cancellation or a quiet afternoon? Post the slot at a discount and let SnapSlot fill it with a paying customer.</p>
+        <div class="btn-row">
+          <a class="btn btn-gold" href="/for-businesses">SnapSlot for business</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Final CTA ===== -->
+    <section class="section center">
+      <div class="container">
+        <h2>Ready to treat yourself?</h2>
+        <p class="lead" style="margin: 16px auto 0;">Join the private beta and be first to grab the deals near you.</p>
+        <div class="btn-row">
+          <a class="btn btn-gold" href="mailto:support@snapslot.com.au?subject=Join%20the%20SnapSlot%20beta">Get the app</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== Footer ===== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a class="brand" href="/">
+            <img src="/assets/logo-icon.png" alt="SnapSlot logo" />
+            <span>SnapSlot<sup>™</sup></span>
+          </a>
+          <p>Last-minute discounted appointment slots near you. Treat yourself.</p>
+        </div>
+        <div class="footer-col">
+          <h4>SnapSlot</h4>
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/how-it-works">How It Works</a></li>
+            <li><a href="/for-businesses">For Businesses</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Legal &amp; Support</h4>
+          <ul>
+            <li><a href="https://tecatlas-au.github.io/snapslot-legal/privacy-policy.html" target="_blank" rel="noopener">Privacy Policy</a></li>
+            <li><a href="https://tecatlas-au.github.io/snapslot-legal/account-deletion.html" target="_blank" rel="noopener">Account Deletion</a></li>
+            <li><a href="mailto:support@snapslot.com.au">support@snapslot.com.au</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-legal">
+        SnapSlot™ is operated by TecAtlas Pty Ltd (ABN 35 697 657 097)<br />
+        Geelong, Victoria, Australia
+      </div>
+    </div>
   </footer>
+
 </body>
 </html>
